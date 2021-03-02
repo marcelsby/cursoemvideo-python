@@ -1,4 +1,4 @@
-print('{1} {0} {1}'.format('DESAFIO #05', '=' * 5))
+print('{1} {0} {1}'.format('DESAFIO #005', '=' * 5))
 
 num = input('Insira um número inteiro: ')
 

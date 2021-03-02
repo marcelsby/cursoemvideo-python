@@ -1,6 +1,6 @@
 import re
 
-print('{1} {0} {1}'.format('DESAFIO #07', '=' * 5))
+print('{1} {0} {1}'.format('DESAFIO #007', '=' * 5))
 
 
 def testar_tipo (input_nota):

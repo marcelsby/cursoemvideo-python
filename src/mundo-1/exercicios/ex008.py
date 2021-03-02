@@ -1,4 +1,4 @@
-print('{1} {0} {1}'.format('DESAFIO #08', '=' * 5))
+print('{1} {0} {1}'.format('DESAFIO #008', '=' * 5))
 
 t_metros = input('Digite um tamanho em metros: ')
 

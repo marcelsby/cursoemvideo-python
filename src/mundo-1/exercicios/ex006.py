@@ -1,6 +1,6 @@
 import re
 
-print('{1} {0} {1}'.format('DESAFIO #06', '=' * 5))
+print('{1} {0} {1}'.format('DESAFIO #006', '=' * 5))
 
 num = input('Digite um número: ')
 
