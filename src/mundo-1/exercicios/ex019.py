@@ -1,3 +1,4 @@
+from mycolors import colorthis
 from random import randint
 print('{1} {0} {1}'.format('DESAFIO #019', '=' * 5))
 
@@ -14,4 +15,4 @@ while i < 4:
         exit(1)
 
 escolhido = alunos[randint(0, len(alunos))]
-print('\nO aluno escolhido para apagar o quadro foi {}'.format(escolhido))
+print('\nO aluno escolhido para apagar o quadro foi {}'.format(colorthis(escolhido, background='cyan')))

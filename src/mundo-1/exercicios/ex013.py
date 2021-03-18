@@ -8,4 +8,6 @@ except:
 
 salario_aumentado = salario * 1.15
 
-print('\nSalário antes do aumento: R${:.2f}\nSalário depois do aumento: R${:.2f}'.format(salario, salario_aumentado))
+print('\nSalário antes do aumento: R${:.2f}'
+      '\nSalário depois do aumento: R${:.2f}'
+      .format(salario, salario_aumentado))

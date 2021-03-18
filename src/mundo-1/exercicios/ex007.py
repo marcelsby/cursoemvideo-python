@@ -1,9 +1,10 @@
+from mycolors import colorthis
 import re
 
 print('{1} {0} {1}'.format('DESAFIO #007', '=' * 5))
 
 
-def testar_tipo (input_nota):
+def testar_tipo(input_nota):
     if input_nota.isdigit():
         return float(input_nota)
     elif not re.search("\d*\.\d*", input_nota) is None:
@@ -13,7 +14,7 @@ def testar_tipo (input_nota):
         exit(1)
 
 
-def calc_media_final (notas):
+def calc_media_final(notas):
     media = 0
     for nota_individual in notas:
         media += nota_individual
@@ -32,13 +33,13 @@ i = 0
 for elemento in notas:
     notas.pop(i)
     notas.insert(i, testar_tipo(elemento))
-    if i <= len(notas):
+    if i < len(notas):
         i += 1
     else:
         break
 
 media_final = calc_media_final(notas)
 
-print('A média final do aluno foi: {}'.format(media_final))
+print('A média final do aluno foi: {}'.format(colorthis(media_final, font='blue')))
 
 exit(0)

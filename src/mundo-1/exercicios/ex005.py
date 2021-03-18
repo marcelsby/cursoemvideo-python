@@ -1,3 +1,4 @@
+from mycolors import colorthis
 print('{1} {0} {1}'.format('DESAFIO #005', '=' * 5))
 
 num = input('Insira um número inteiro: ')
@@ -11,4 +12,7 @@ num = int(num)
 suc = num + 1
 ant = num - 1
 
-print('\n\nO sucessor do número {2} é: {0}\nO antecessor do número {2} é: {1}'.format(suc, ant, num))
+print('\n\nO sucessor do número {2} é: {0}'
+      '\nO antecessor do número {2} é: {1}'.format(colorthis(suc, font='green'),
+                                                   colorthis(ant, font='red'),
+                                                   colorthis(num, font='yellow')))

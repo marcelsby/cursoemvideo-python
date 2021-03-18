@@ -11,8 +11,8 @@ print(frase[3:])
 print(frase[9:])
 print(frase[9:14])
 
-## Intervalo de todos os elementos mas exibindo apenas de dois em dois
-## (quando os dois primeiros argumentos são omitidos o Python considera o final e o início da string)
+# Intervalo de todos os elementos mas exibindo apenas de dois em dois
+# (quando os dois primeiros argumentos são omitidos o Python considera o final e o início da string)
 print(frase[::2])
 print(frase[0:14:3])
 

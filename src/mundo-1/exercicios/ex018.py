@@ -9,4 +9,8 @@ except:
 
 ang_rad = radians(ang_graus)
 
-print('\nÂngulo inserido: {}º\nSeno: {:.2f}\nCosseno: {:.2f}\nTangente: {:.2f}'.format(ang_graus, sin(ang_rad), cos(ang_rad), tan(ang_rad)))
+print('\nÂngulo inserido: {}º'
+      '\nSeno: {:.2f}'
+      '\nCosseno: {:.2f}'
+      '\nTangente: {:.2f}'
+      .format(ang_graus, sin(ang_rad), cos(ang_rad), tan(ang_rad)))

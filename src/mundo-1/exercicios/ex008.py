@@ -1,3 +1,4 @@
+from mycolors import colorthis
 print('{1} {0} {1}'.format('DESAFIO #008', '=' * 5))
 
 t_metros = input('Digite um tamanho em metros: ')
@@ -11,4 +12,5 @@ else:
 t_cm = t_metros * 100
 t_mm = t_metros * 1000
 
-print('Tamanho em centímetros: {} cm\nTamanho em milímetros: {} mm'.format(t_cm, t_mm))
+print('Tamanho em centímetros: {} cm\nTamanho em milímetros: {} mm'.format(colorthis(t_cm, background='blue'),
+                                                                           colorthis(t_mm, background='green')))

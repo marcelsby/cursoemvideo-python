@@ -1,3 +1,4 @@
+from mycolors import colorthis
 print('{1} {0} {1}'.format('DESAFIO #025', '=' * 5))
 
 nome = input('Digite um nome: ')
@@ -12,6 +13,8 @@ except:
 tem_silva = 'SILVA' in nome.upper()
 
 if tem_silva:
-    print('\nEste nome possui "SILVA"!')
+    print('\nEste nome possui {}!'
+          .format(colorthis('\"SILVA\"', background='green')))
 else:
-    print('\nEste nome não possui "SILVA"!')
+    print('\nEste nome não possui {}!'
+          .format(colorthis('\"SILVA\"', background='red')))

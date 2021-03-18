@@ -8,6 +8,8 @@ except:
 
 t_fahrenheit = (t_celsius * (9 / 5)) + 32
 
-print('\nTemperatura em Celsius = ºC {:.1f}\nTemperatura em Fahrenheit = ºF {:.1f}'.format(t_celsius, t_fahrenheit))
+print('\nTemperatura em Celsius = ºC {:.1f}'
+      '\nTemperatura em Fahrenheit = ºF {:.1f}'
+      .format(t_celsius, t_fahrenheit))
 
 exit(0)

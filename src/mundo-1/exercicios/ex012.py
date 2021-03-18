@@ -8,4 +8,8 @@ except:
 
 preco_liquidacao = preco * 0.95
 
-print('Preço antes da liquidação: R${:.2f}\nPreço na liquidação: R${:.2f}\nVocê economiza: R${:.2f}'.format(preco, preco_liquidacao, preco - preco_liquidacao).replace('.', ','))
+print('Preço antes da liquidação: R${:.2f}'
+      '\nPreço na liquidação: R${:.2f}'
+      '\nVocê economiza: R${:.2f}'
+      .format(preco, preco_liquidacao, preco - preco_liquidacao)
+      .replace('.', ','))

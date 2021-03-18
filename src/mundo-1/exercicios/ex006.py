@@ -1,3 +1,4 @@
+from mycolors import colorthis
 import re
 
 print('{1} {0} {1}'.format('DESAFIO #006', '=' * 5))
@@ -16,6 +17,7 @@ dobro = num * 2
 triplo = num * 3
 raizQuadrada = num ** (1 / 2)
 
-print('Número inserido: {}'.format(num))
-print('Seu dobro é: {}\nSeu triplo é: {}'.format(dobro, triplo))
-print('A raiz quadrada desse número é: {}'.format(raizQuadrada))
+print('Número inserido: {}'.format(colorthis(num, 'underlined', 'cyan')))
+print('Seu dobro é: {}\nSeu triplo é: {}'.format(colorthis(dobro, 'bold', 'blue'),
+                                                 colorthis(triplo, 'bold', 'red')))
+print('A raiz quadrada desse número é: {}'.format(colorthis(raizQuadrada, font='green')))
