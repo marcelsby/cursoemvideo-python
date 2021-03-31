@@ -1,8 +1,8 @@
 from random import randint
 
-try:
-    print('{1} {0} {1}'.format('DESAFIO #045', '=' * 5))
+print('{1} {0} {1}'.format('DESAFIO #045', '=' * 5))
 
+try:
     print('Opções:' '\n1. Pedra'
           '\n2. Papel'
           '\n3. Tesoura\n')
