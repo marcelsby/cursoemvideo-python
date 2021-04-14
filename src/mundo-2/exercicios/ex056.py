@@ -1,5 +1,6 @@
 print('{1} {0} {1}'.format('DESAFIO #056', '=' * 15))
 
+
 class Pessoa:
     def __init__(self, nome, idade, sexo):
         self.nome = nome
@@ -24,6 +25,7 @@ def filtrar_pessoa_mais_velha(pessoas):
 
     return p_maior_idade
 
+
 def filtrar_mulheres_sub_vinte(mulheres):
     sub_vinte = []
     for m in mulheres:
@@ -31,6 +33,7 @@ def filtrar_mulheres_sub_vinte(mulheres):
             sub_vinte.append(m)
 
     return sub_vinte
+
 
 def get_media_idades(pessoas):
     total_idade = int()
