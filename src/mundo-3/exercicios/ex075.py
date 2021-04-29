@@ -2,7 +2,7 @@ valores = []
 
 try:
     for i in range(4):
-        num = int(input(f'Digite o {i + 1}o número: '))
+        num = int(input(f'Digite o {i + 1}º número: '))
         valores.append(num)
 
     valores = tuple(valores)
@@ -13,20 +13,33 @@ except ValueError:
 
 ocorr_nove = valores.count(9)
 if ocorr_nove > 0:
-    print(f'Quantidade de aparições do número nove: {ocorr_nove}')
+    print(f'\nQuantidade de aparições do número nove: {ocorr_nove}')
+else:
+    print('O número 9 não faz parte da tupla inserida!')
 
-primeiro_tres = valores.index(3)
+try:
+    primeiro_tres = valores.index(3)
+except:
+    primeiro_tres = -1
+
 if primeiro_tres > 0:
     print(f'O três apareceu pela primeira vez na posição: {primeiro_tres}')
+else:
+    print('O número 3 não existe na tupla inserida!')
 
 pares = []
 
-print(valores)
-for j in valores:
-    if valores[j] % 2 == 0:
-        pares.append(valores[j])
+pares = valores.find()
 
-if len(pares) > 0:
+for i in range(0, len(valores)):
+    if valores[i] % 2 == 0:
+        pares.append(valores[i])
+
+tam_pares = len(pares)
+if tam_pares > 0:
     print('Números pares inseridos:', end=' ')
     for n in pares:
-        print(n, end=' ')
+        if n == tam_pares - 1:
+            print(n)
+        else:
+            print(n, end=' ')
