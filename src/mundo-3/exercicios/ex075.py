@@ -15,7 +15,7 @@ ocorr_nove = valores.count(9)
 if ocorr_nove > 0:
     print(f'\nQuantidade de aparições do número nove: {ocorr_nove}')
 else:
-    print('O número 9 não faz parte da tupla inserida!')
+    print('\nO número 9 não faz parte da tupla inserida!')
 
 try:
     primeiro_tres = valores.index(3)
@@ -29,8 +29,6 @@ else:
 
 pares = []
 
-pares = valores.find()
-
 for i in range(0, len(valores)):
     if valores[i] % 2 == 0:
         pares.append(valores[i])
@@ -38,8 +36,10 @@ for i in range(0, len(valores)):
 tam_pares = len(pares)
 if tam_pares > 0:
     print('Números pares inseridos:', end=' ')
-    for n in pares:
-        if n == tam_pares - 1:
+    for i, n in enumerate(pares):
+        if i == tam_pares - 1:
             print(n)
         else:
             print(n, end=' ')
+else:
+    print('A tupla inserida não possui números pares!')
