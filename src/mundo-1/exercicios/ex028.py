@@ -1,6 +1,7 @@
 from mycolors import colorthis
 from random import randint
-print('{1} {0} {1}'.format('DESAFIO #028', '=' * 5))
+print('{1} {0} {1}'.format('DESAFIO #028', '=' * 15))
+print('{:x^44}'.format(' JOGO DA ADIVINHAÇÃO '))
 entrada = input('Digite um número de 0 a 5: ')
 
 if entrada.isdecimal():

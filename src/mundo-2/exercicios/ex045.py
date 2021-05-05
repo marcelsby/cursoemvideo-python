@@ -1,6 +1,7 @@
 from random import randint
 
-print('{1} {0} {1}'.format('DESAFIO #045', '=' * 5))
+print('{1} {0} {1}'.format('DESAFIO #045', '=' * 10))
+print('{:^34}'.format('PEDRA x PAPEL x TESOURA'))
 
 try:
     print('Opções:' '\n1. Pedra'
